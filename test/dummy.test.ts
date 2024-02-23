@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { handler } from "../src/endpoint";
+import { handler } from "../src/endpoint.js";
 
 describe("serveRendered", () => {
   it("should correctly transform source style", async () => {

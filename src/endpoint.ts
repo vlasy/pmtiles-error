@@ -1,4 +1,4 @@
-import pmtiles from "pmtiles";
+import * as pmtiles from "pmtiles"; // it does not have default export
 
 const Compression = pmtiles.Compression;
 

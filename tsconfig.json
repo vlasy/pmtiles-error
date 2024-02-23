@@ -2,11 +2,13 @@
     "compilerOptions": {
       "outDir": "dist",
       "target": "ES2020",
-      "module": "commonjs",
+      "module": "NodeNext", // Needed to emit imports, not requires
+      "moduleResolution": "NodeNext", // Needed to enforce fully qualified import paths (include .js extension)
       "lib": [
         "es2020",
         "dom"
       ],
+      "skipLibCheck": true, // "pmtiles" don't have valid esm types generated (should use .js extension in import paths)
       "declaration": true,
       "strict": true,
       "noImplicitAny": true,
